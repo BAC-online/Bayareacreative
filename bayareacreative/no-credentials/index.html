@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>No Credentials</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;1,400&family=Space+Mono&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--black:#0e0e0e;--near:#141414;--red:#e8001d;--white:#f0ece4;--grey:#8a8478;--rule:#2a2a2a}
+body{background:var(--black);color:var(--white);font-family:'Libre Baskerville',serif}
+.spine{position:fixed;left:0;top:0;bottom:0;width:4px;background:linear-gradient(to bottom,transparent,var(--red) 15%,var(--red) 85%,transparent);z-index:99}
+nav{padding:28px 48px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--rule)}
+.back{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--grey);text-decoration:none;display:flex;align-items:center;gap:8px}
+.back::before{content:'←';color:var(--red)}
+.back:hover{color:var(--white)}
+.wordmark{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:.12em;color:var(--white);text-decoration:none}
+.wordmark span{color:var(--red)}
+.nav-tag{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--grey)}
+.hero{padding:80px 48px 60px;max-width:900px;margin:0 auto}
+.hero-label{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:var(--red);margin-bottom:20px;display:flex;align-items:center;gap:12px}
+.hero-label::before{content:'';width:28px;height:1px;background:var(--red);display:block}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(64px,10vw,120px);line-height:.88;letter-spacing:.04em;margin-bottom:8px}
+.hero h1 span{color:var(--red)}
+.tagline{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.2em;color:var(--grey);font-style:italic;margin-bottom:32px}
+.logline{background:var(--near);border-left:3px solid var(--red);padding:24px 28px;max-width:640px;margin-bottom:64px}
+.logline p{font-style:italic;font-size:17px;line-height:1.7;color:var(--white)}
+.section{padding:0 48px;max-width:900px;margin:0 auto 56px}
+.section-header{display:flex;align-items:center;gap:14px;margin-bottom:24px}
+.section-label{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:var(--red)}
+.section-rule{flex:1;height:1px;background:var(--rule)}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.card{background:var(--near);border:1px solid var(--rule);padding:24px;text-decoration:none;display:block;transition:border-color .2s}
+.card:hover{border-color:var(--red)}
+.card-label{font-family:'Space Mono',monospace;font-size:8px;letter-spacing:.25em;text-transform:uppercase;color:var(--red);margin-bottom:10px}
+.card-title{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:.04em;color:var(--white);margin-bottom:6px}
+.card-sub{font-family:'Space Mono',monospace;font-size:9px;line-height:1.7;color:var(--grey)}
+.card-arrow{font-family:'Space Mono',monospace;font-size:9px;color:var(--red);margin-top:14px;display:block}
+.venue-card{background:var(--near);border:1px solid var(--rule);padding:24px;text-decoration:none;display:block;transition:border-color .2s}
+.venue-card:hover{border-color:var(--red)}
+footer{border-top:1px solid var(--rule);padding:24px 48px;display:flex;justify-content:space-between;align-items:center;margin-top:40px}
+footer p{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.15em;color:var(--grey)}
+@media(max-width:600px){nav,.hero,.section,footer{padding-left:24px;padding-right:24px}}
+</style>
+</head>
+<body>
+<div class="spine"></div>
+<nav>
+  <a href="/Bayareacreative/" class="back">Bay Area Creative</a>
+  <a href="/Bayareacreative/no-credentials/" class="wordmark">NO<span>.</span>CREDENTIALS</a>
+  <span class="nav-tag">You gotta hear this</span>
+</nav>
+
+<div class="hero" style="max-width:100%;padding-left:48px;padding-right:48px">
+  <div class="hero-label">Bay Area Creative — Series in Development</div>
+  <h1>NO<span>.</span><br>CREDENTIALS</h1>
+  <div class="tagline">"You gotta hear this."</div>
+  <div class="logline">
+    <p>A music discovery series following genuine curiosity into the rooms, stages, and festivals where the real music lives — told through the voices of artists, builders, and believers who show up not for credentials, but because they can't stay away.</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-header">
+    <div class="section-label">Series Documents</div>
+    <div class="section-rule"></div>
+  </div>
+  <div class="card-grid">
+    <a href="/Bayareacreative/no-credentials/treatment.html" class="card">
+      <div class="card-label">Investor Treatment</div>
+      <div class="card-title">Series Treatment</div>
+      <div class="card-sub">Full series concept, format breakdown, pilot episode, revenue architecture, and founder background.</div>
+      <span class="card-arrow">View treatment →</span>
+    </a>
+    <div class="card" style="opacity:.4;cursor:default">
+      <div class="card-label">Coming Soon</div>
+      <div class="card-title">Pilot Reel</div>
+      <div class="card-sub">Jazz Fest 2026 — New Orleans. Marc Broussard. In production.</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-header">
+    <div class="section-label">Venue Essays</div>
+    <div class="section-rule"></div>
+  </div>
+  <div class="card-grid">
+    <a href="/Bayareacreative/no-credentials/venues/whisky-a-go-go.html" class="card">
+      <div class="card-label">Venues — No. 01</div>
+      <div class="card-title">Whisky a Go Go</div>
+      <div class="card-sub">8901 Sunset Blvd, West Hollywood. Est. 1964. Still standing.</div>
+      <span class="card-arrow">Read essay →</span>
+    </a>
+    <a href="/Bayareacreative/no-credentials/venues/first-avenue.html" class="card">
+      <div class="card-label">Venues — No. 02</div>
+      <div class="card-title">First Avenue</div>
+      <div class="card-sub">701 N First Ave, Minneapolis. The room that built Prince.</div>
+      <span class="card-arrow">Read essay →</span>
+    </a>
+    <div class="card" style="opacity:.4;cursor:default">
+      <div class="card-label">Venues — No. 03</div>
+      <div class="card-title">Fogartyville</div>
+      <div class="card-sub">Sarasota, FL. Coming soon.</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>No Credentials — Bay Area Creative LLC</p>
+  <p>You gotta hear this</p>
+</footer>
+</body>
+</html>
